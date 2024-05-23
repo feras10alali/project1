@@ -1,12 +1,9 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Riyal-Balance</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@1,700&display=swap" rel="stylesheet">
     <style>
         body{
             margin: 0;
@@ -21,19 +18,6 @@
             height: 10.3vh;
         }
 
-
-        h1{
-            font-family: "Comic Neue", cursive;
-            font-weight: 700;
-            font-style: italic;
-        }
-
-        p{
-            font-family: "Comic Neue", cursive;
-            font-weight: 700;
-            font-style: italic;
-        }
-
         #main{
             display: flex;
             align-items: center;
@@ -41,6 +25,9 @@
         }
 
         #Logo{
+            position: absolute;
+            left: 10px;
+            top: 10px;
             height: 130px;
         }
 
@@ -59,6 +46,10 @@
             color: #fff;
             padding: 0;
         }
+
+        
+            
+        
 
         #footerP{
             font-size: 18px;
@@ -99,16 +90,15 @@
             background-color: #b18a32;
         }
 
+        #per{
+            margin-top: 15px;
+            font-size: 25px;
+            background-color: #b6b6b6;
+        }
+
         h1{
             background-color: #b6b6b6;
         }
-
-        #per{
-            background-color: #b6b6b6;
-            margin-top: 15px;
-            font-size: 22.5px;
-        }
-
         
 
         #text-div{
@@ -135,38 +125,38 @@
     <div id="table">
         <table>
             <tr id="mainTr">
-              <th>Date</th>
-              <th>Agreed Amount</th>
-              <th>Cash Amount</th>
+              <th>التاريخ</th>
+              <th>المبلغ المتفق عليه</th>
+              <th>المبلغ النقدي</th>
             </tr>
             <tr>
               <td>11/2/2024</td>
-              <td>Grocery</td>
+              <td>البقالة</td>
               <td>50</td>
             </tr>
             <tr>
               <td>1/1/2024</td>
-              <td>Sailing</td>
+              <td>إبحار</td>
               <td>1,500</td>
             </tr>
             <tr>
               <td>28/12/2023</td>
-              <td>Electricity Bill</td>
+              <td>فاتورة الكهرباء</td>
               <td>650</td>
             </tr>
           </table>
     </div>
     <div id="po">
-        <h1>Expenses:</h1>
+        <h1>المصروفات:</h1>
         <div id="text-div">
             <p id="per">
-                Expenses are the money spent by companies or individuals on various activities and services that help them achieve their goals and interests. Expenses vary according to their type, source, purpose, and duration. In accounting, expenses are divided into capital expenses and revenue expenses.
+                المصروفات هي الأموال التي تنفقها الشركات أو الأفراد على مختلف الأنشطة والخدمات التي تساعدهم على تحقيق أهدافهم ومصالحهم. تختلف المصروفات وفقا لنوعها ومصدرها وغرضها ومدتها. في المحاسبة، تنقسم المصروفات إلى مصروفات رأس المال ومصروفات الإيرادات. 
                 <br>
                 <br>
-                Capital expenses are the funds spent on acquiring, improving, adding, or replacing fixed assets, such as buildings, equipment, machinery, and vehicles. These expenses are long-term investments that generate returns for the company over many years.
+                تعتبر مصروفات رأس المال الأموال التي تنفق على شراء أو تحسين أو إضافة أو إحلال الأصول الثابتة، مثل المباني والمعدات والآلات والسيارات. تعتبر هذه المصروفات استثمارات طويلة الأجل تدر عائدات للشركة على مدى سنوات عديدة.
                 <br>
                 <br>
-                Revenue expenses are the funds spent on the day-to-day operations of the company, such as salaries, rents, raw materials, general expenses, marketing, research, and development. These expenses are considered short-term expenses consumed in the same fiscal year in which the expenditure occurred.</p>
+                تعتبر مصروفات الإيرادات الأموال التي تنفق على تشغيل الأنشطة اليومية للشركة، مثل الرواتب والإيجارات والمواد الخام والمصروفات العامة والتسويق والبحث والتطوير. هذه المصاريف تعتبر هذه المصروفات نفقات قصيرة الأجل تستهلك في نفس السنة المالية التي تمت فيها الإنفاق.</p>
         </div>
     </div>
 

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riyal-Balance</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-image: 
+                linear-gradient(to bottom, #544428 0%, #544428 15%, #b18a32 15%, #b18a32 100%);
+            background-size: 100% ;
+            background-repeat: no-repeat; 
+            height: 10.3vh;
+        }
+
+        #Logo{
+            position: absolute;
+            left: 10px;
+            top: 10px;
+            height: 130px;
+        }
+
+        h1{
+            font-family: "Comic Neue", cursive;
+            font-weight: 700;
+            font-style: italic;
+        }
+
+
+        #main{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #Logo{
+            height: 130px;
+        }
+
+        h1{
+            margin-bottom: 0;
+        }
+
+        footer{
+            background-color: #b18a32;
+            position: fixed;
+            bottom: 0;
+            width: 100vw;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #fff;
+            padding: 0;
+        }
+
+        #footerP{
+            font-size: 18px;
+        }
+
+
+        .container {
+            display: flex;
+            align-items: center;
+            }
+
+            .box {
+                width: 165px;
+                height: 165px;
+                border: 1px solid #ccc;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 65px;
+                margin: 10px;
+                position:absolute;
+                top: 45%;
+                left: 15%;
+                border: 10px;
+                box-shadow: 0px -10px 0px rgb(255, 38, 0), -0px -2.5px 0px 7px rgb(0, 0, 0);
+            }
+
+            .square {
+                width: 167px;
+                height: 20px;
+                background-color: red;
+                position: absolute;
+                top: 15%;
+                left: 50%;
+                transform: translateX(-50%);
+                position:absolute;
+                top: 46%;
+                left: 19.85%;
+            }
+
+            
+            #imgl{
+                position:absolute;
+                top: -20px;
+                right: 0%;
+
+            }
+            #p1{ 
+                font-size: 48px;
+                position:absolute;
+                top: 29%;
+                left: 15.5%;  
+            }
+
+            #text-box{
+                text-align: center;
+                justify-content: center;
+            }
+
+            #sD-p{
+                font-size: 48px;
+                position: absolute;
+                left: 15vw;
+                top:25vh;
+                
+            }
+
+            #S-p{
+                font-size: 48px;
+                position: absolute;
+                left: 35vw;
+                top:25vh;
+            }
+
+            #Ll{
+                position: absolute;
+                top: 45vh;
+                left: 35vw;
+            }
+
+            #po{
+            position: absolute;
+            top: 50%;
+            right: 1.5%;
+            transform: translate( -50%, -50%);
+        }
+
+        #text-div{
+            display: flex;
+            width: 25vw;
+        }
+
+        #per{
+            margin-top: 15px;
+            font-size: 25px;
+            background-color: #b6b6b6;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <img src="./images/logo.png" alt="Logo" id="Logo">
+    </header>
+
+    <div id="po">
+        <h1>Balance:</h1>
+        <div id="text-div">
+            <p id="per">Balance, or what we mean by security amount, is a sum of money that a person keeps to deal with emergencies or unforeseen situations, such as job loss, illness, or property damage. Financial management experts advise that the security amount should be between three to six months of the person's fixed monthly expenses, such as rent, bills, loans, and basic expenses. The person can keep the security amount in an easily accessible bank account or in a secure and liquid investment tool, such as fixed deposits or money market funds. The security amount helps the person avoid borrowing or depleting their savings or investments in times of need, giving them peace of mind and confidence in facing financial challenges. It also contributes to achieving financial security for the person and their family in the long run.</p>
+        </div>
+    </div>
+
+        <p id="sD-p">Security<br>Deposits</p>
+        <div class="container">
+            <div class="box" id="b5"> 
+            <span id="number1">9999</span>
+            </div>
+        </div>
+        <p id="S-p">Savings</p>
+    <div id="Ll">
+        <div class="container">
+            <div class="box" id="b5"> 
+            <span id="number2">9999</span>
+            </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <footer>
+        <p id="footerP">عمل الطلاب: فراس العلي, محمد العبد رب الرضا, اسامة المجحد</p>
+    </footer>
+    <script>
+        var number1 = document.getElementById("number1");
+        var square = document.querySelector(".square");
+
+        if (parseInt(number1.innerHTML) > 10000) {
+        square.classList.add("green");
+        }
+    </script>
+</body>
+</html>
