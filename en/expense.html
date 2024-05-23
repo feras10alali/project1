@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riyal-Balance</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@1,700&display=swap" rel="stylesheet">
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-image: 
+                linear-gradient(to bottom, #544428 0%, #544428 15%, #b18a32 15%, #b18a32 100%);
+            background-size: 100% ;
+            background-repeat: no-repeat; 
+            height: 10.3vh;
+        }
+
+
+        h1{
+            font-family: "Comic Neue", cursive;
+            font-weight: 700;
+            font-style: italic;
+        }
+
+        p{
+            font-family: "Comic Neue", cursive;
+            font-weight: 700;
+            font-style: italic;
+        }
+
+        #main{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #Logo{
+            height: 130px;
+        }
+
+        h1{
+            margin-bottom: 0;
+        }
+
+        footer{
+            background-color: #b18a32;
+            position: fixed;
+            bottom: 0;
+            width: 100vw;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #fff;
+            padding: 0;
+        }
+
+        #footerP{
+            font-size: 18px;
+        }
+
+        #table{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-70%, -50%);
+        }
+
+        #Ttable{
+            display: grid;
+            border: #544428;
+            align-content: center;
+            justify-content: center;
+            width: 25vw;
+            
+        }
+
+        table, th, td {
+            border: 9px solid #544428;
+            border-collapse: collapse;
+            text-align: center;
+        }
+        
+        table{
+            width: 25vw;
+            height: 25vh;
+        }
+
+        th {
+        padding: 5px;
+        }
+
+        #mainTr{
+            background-color: #b18a32;
+        }
+
+        h1{
+            background-color: #b6b6b6;
+        }
+
+        #per{
+            background-color: #b6b6b6;
+            margin-top: 15px;
+            font-size: 25px;
+        }
+
+        
+
+        #text-div{
+            display: flex;
+            width: 25vw;
+        }
+
+        #po{
+            position: absolute;
+            top: 50%;
+            right: 1.5%;
+            transform: translate( -50%, -50%);
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <img src="./images/logo.png" alt="Logo" id="Logo">
+    </header>
+
+    
+
+    <div id="table">
+        <table>
+            <tr id="mainTr">
+              <th>Date</th>
+              <th>Agreed Amount</th>
+              <th>Cash Amount</th>
+            </tr>
+            <tr>
+              <td>11/2/2024</td>
+              <td>Grocery</td>
+              <td>50</td>
+            </tr>
+            <tr>
+              <td>1/1/2024</td>
+              <td>Sailing</td>
+              <td>1,500</td>
+            </tr>
+            <tr>
+              <td>28/12/2023</td>
+              <td>Electricity Bill</td>
+              <td>650</td>
+            </tr>
+          </table>
+    </div>
+    <div id="po">
+        <h1>Expenses:</h1>
+        <div id="text-div">
+            <p id="per">
+                Expenses are the money spent by companies or individuals on various activities and services that help them achieve their goals and interests. Expenses vary according to their type, source, purpose, and duration. In accounting, expenses are divided into capital expenses and revenue expenses.
+                <br>
+                <br>
+                Capital expenses are the funds spent on acquiring, improving, adding, or replacing fixed assets, such as buildings, equipment, machinery, and vehicles. These expenses are long-term investments that generate returns for the company over many years.
+                <br>
+                <br>
+                Revenue expenses are the funds spent on the day-to-day operations of the company, such as salaries, rents, raw materials, general expenses, marketing, research, and development. These expenses are considered short-term expenses consumed in the same fiscal year in which the expenditure occurred.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p id="footerP">عمل الطلاب: فراس العلي محمد العبد رب الرضا اسامة المجحد</p>
+    </footer>
+
+</body>
+</html>

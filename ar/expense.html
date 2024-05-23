@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riyal-Balance</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-image: 
+                linear-gradient(to bottom, #544428 0%, #544428 15%, #b18a32 15%, #b18a32 100%);
+            background-size: 100% ;
+            background-repeat: no-repeat; 
+            height: 10.3vh;
+        }
+
+        #main{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #Logo{
+            position: absolute;
+            left: 10px;
+            top: 10px;
+            height: 130px;
+        }
+
+        h1{
+            margin-bottom: 0;
+        }
+
+        footer{
+            background-color: #b18a32;
+            position: fixed;
+            bottom: 0;
+            width: 100vw;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #fff;
+            padding: 0;
+        }
+
+        
+            
+        
+
+        #footerP{
+            font-size: 18px;
+        }
+
+        #table{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-70%, -50%);
+        }
+
+        #Ttable{
+            display: grid;
+            border: #544428;
+            align-content: center;
+            justify-content: center;
+            width: 25vw;
+            
+        }
+
+        table, th, td {
+            border: 9px solid #544428;
+            border-collapse: collapse;
+            text-align: center;
+        }
+        
+        table{
+            width: 25vw;
+            height: 25vh;
+        }
+
+        th {
+        padding: 5px;
+        }
+
+        #mainTr{
+            background-color: #b18a32;
+        }
+
+        #per{
+            margin-top: 15px;
+            font-size: 25px;
+            background-color: #b6b6b6;
+            font
+        }
+
+        h1{
+            background-color: #b6b6b6;
+        }
+        
+
+        #text-div{
+            display: flex;
+            width: 25vw;
+        }
+
+        #po{
+            position: absolute;
+            top: 50%;
+            right: 1.5%;
+            transform: translate( -50%, -50%);
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <img src="./images/logo.png" alt="Logo" id="Logo">
+    </header>
+
+    
+
+    <div id="table">
+        <table>
+            <tr id="mainTr">
+              <th>التاريخ</th>
+              <th>المبلغ المتفق عليه</th>
+              <th>المبلغ النقدي</th>
+            </tr>
+            <tr>
+              <td>11/2/2024</td>
+              <td>البقالة</td>
+              <td>50</td>
+            </tr>
+            <tr>
+              <td>1/1/2024</td>
+              <td>إبحار</td>
+              <td>1,500</td>
+            </tr>
+            <tr>
+              <td>28/12/2023</td>
+              <td>فاتورة الكهرباء</td>
+              <td>650</td>
+            </tr>
+          </table>
+    </div>
+    <div id="po">
+        <h1>المصروفات:</h1>
+        <div id="text-div">
+            <p id="per">
+                المصروفات هي الأموال التي تنفقها الشركات أو الأفراد على مختلف الأنشطة والخدمات التي تساعدهم على تحقيق أهدافهم ومصالحهم. تختلف المصروفات وفقا لنوعها ومصدرها وغرضها ومدتها. في المحاسبة، تنقسم المصروفات إلى مصروفات رأس المال ومصروفات الإيرادات. 
+                <br>
+                <br>
+                تعتبر مصروفات رأس المال الأموال التي تنفق على شراء أو تحسين أو إضافة أو إحلال الأصول الثابتة، مثل المباني والمعدات والآلات والسيارات. تعتبر هذه المصروفات استثمارات طويلة الأجل تدر عائدات للشركة على مدى سنوات عديدة.
+                <br>
+                <br>
+                تعتبر مصروفات الإيرادات الأموال التي تنفق على تشغيل الأنشطة اليومية للشركة، مثل الرواتب والإيجارات والمواد الخام والمصروفات العامة والتسويق والبحث والتطوير. هذه المصاريف تعتبر هذه المصروفات نفقات قصيرة الأجل تستهلك في نفس السنة المالية التي تمت فيها الإنفاق.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p id="footerP">عمل الطلاب: فراس العلي محمد العبد رب الرضا اسامة المجحد</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Riyal-Balance</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+            background-image: 
+                linear-gradient(to bottom, #544428 0%, #544428 15%, #b18a32 15%, #b18a32 100%);
+            background-size: 100% ;
+            background-repeat: no-repeat; 
+            height: 10.3vh;
+        }
+
+    #main {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    #Logo {
+      height: 130px;
+    }
+
+    .button-56 {
+      align-items: center;
+      background-color: #bcbcbc;
+      border: 2px solid #111;
+      border-radius: 8px;
+      box-sizing: border-box;
+      color: #111;
+      cursor: pointer;
+      display: flex;
+      font-family: Inter, sans-serif;
+      font-size: 16px;
+      height: 48px;
+      justify-content: center;
+      line-height: 24px;
+      max-width: 100%;
+      padding: 0 25px;
+      position: relative;
+      text-align: center;
+      text-decoration: none;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+    }
+
+    .button-56:after {
+      background-color: #111;
+      border-radius: 8px;
+      content: "";
+      display: block;
+      height: 48px;
+      left: 0;
+      width: 100%;
+      position: absolute;
+      top: -2px;
+      transform: translate(8px, 8px);
+      transition: transform .2s ease-out;
+      z-index: -1;
+    }
+
+    .button-56:hover:after {
+      transform: translate(0, 0);
+    }
+
+    .button-56:active {
+      background-color: #a8a8a8;
+      outline: 0;
+    }
+
+    .button-56:hover {
+      outline: 0;
+    }
+
+    @media (min-width: 768px) {
+      .button-56 {
+        padding: 0 40px;
+      }
+    }
+
+    #button {
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      margin-top: 25vh;
+    }
+
+    #mB {
+      margin-left: 12px;
+      margin-right: 8px;
+    }
+
+    footer {
+      background-color: #b18a32;
+      position: fixed;
+      bottom: 0;
+      width: 100vw;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #fff;
+      padding: 0;
+    }
+
+    #footerP {
+      font-size: 18px;
+    }
+
+    a {
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="./images/logo.png" alt="Logo" id="Logo">
+  </header>
+  <div id="main">
+    <div id="button">
+      <a href="/ar"><button class="button-56" role="button">العربيه</button></a>
+      <a href="/en"><button id="mB" class="button-56" role="button">English</button></a>
+    </div>
+  </div>
+  <footer>
+    <p id="footerP">عمل الطلاب: فراس العلي محمد العبد رب الرضا اسامة المجحد</p>
+  </footer>
+  </body>
+  </html>
