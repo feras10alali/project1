@@ -4,9 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Riyal-Balance</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@1,700&display=swap" rel="stylesheet">
     <style>
         body{
             margin: 0;
@@ -21,17 +18,7 @@
             height: 10.3vh;
         }
 
-         h1{
-            font-family: "Comic Neue", cursive;
-            font-weight: 700;
-            font-style: italic;
-        }
-
-        p{
-            font-family: "Comic Neue", cursive;
-            font-weight: 700;
-            font-style: italic;
-        }
+         
 
         #Logo{
             position: absolute;
@@ -40,11 +27,8 @@
             height: 130px;
         }
 
-        h1{
-            font-family: "Comic Neue", cursive;
-            font-weight: 700;
-            font-style: italic;
-        }
+   
+    
 
 
         #main{
@@ -97,6 +81,22 @@
                 left: 15%;
                 border: 10px;
                 box-shadow: 0px -10px 0px rgb(255, 38, 0), -0px -2.5px 0px 7px rgb(0, 0, 0);
+            }
+
+            .box1 {
+                width: 165px;
+                height: 165px;
+                border: 1px solid #ccc;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 65px;
+                margin: 10px;
+                position:absolute;
+                top: 45%;
+                left: 15%;
+                border: 10px;
+                box-shadow: 0px -10px 0px rgb(30, 255, 0), -0px -2.5px 0px 7px rgb(0, 0, 0);
             }
 
             .square {
@@ -171,31 +171,107 @@
             
         }
 
+        #page-N{
+            margin: 0;
+            padding: 0;
+            padding-top: 35px;
+            padding-right: 5px;
+            font-size: 35px;
+        }
+
+           @media only screen and (max-width: 1349px) {
+            /* Your CSS styles for screens less than 1349px wide */
+            p {
+                font-size: 10px; /* Example style change */
+            }
+            #table {
+                align-items: center;
+                justify-content: center;
+            }
+            #po {
+                position: absolute;
+                top: 75vh;
+                left: 50%;
+                transform: translate(-50%, 0%);
+            }
+
+            #text-div{
+                width: 300px;
+            }
+
+            .box {
+                width: 125px;
+                height: 125px;
+                border: 1px solid #ccc;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 65px;
+                margin: 10px;
+                position:absolute;
+                top: 45%;
+                left: 17vw;
+                border: 10px;
+                box-shadow: 0px -10px 0px rgb(255, 38, 0), -0px -2.5px 0px 7px rgb(0, 0, 0);
+            }
+
+            .box1 {
+                width: 125px;
+                height: 125px;
+                border: 1px solid #ccc;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 65px;
+                margin: 10px;
+                position:absolute;
+                top: 45%;
+                left: 10vw;
+                border: 10px;
+                box-shadow: 0px -10px 0px rgb(30, 255, 0), -0px -2.5px 0px 7px rgb(0, 0, 0);
+            }
+
+            #sD-p{
+                font-size: 32px;
+                position: absolute;
+                top:300px
+            }
+
+            #S-p{
+                font-size: 37px;
+                position: absolute;
+                top:300px;
+                right: 100px;
+            }
+
+            }
+
     </style>
 </head>
 <body>
     <header>
+        <p id="page-N">المحفظة</p>
         <img src="./images/logo.png" alt="Logo" id="Logo">
     </header>
 
     <div id="po">
-        <h1>الحصالة:</h1>
+        <h1>المحفظة:</h1>
         <div id="text-div">
-            <p id="per">الحصالة ونقصد بها مبلغ الأمان ‎مبلغ الأمن هو مبلغ من المال يحتفظ به الشخص لمواجهة الحالات الطارئة أو الغير متوقعة، مثل فقدان العمل أو الإصابة بمرض أو تلف ممتلكاته. ينصح خبراء الإدارة المالية بأن يكون مبلغ الأمن ما بين ثلاثة إلى ستة أشهر من النفقات الشهرية الثابتة للشخص، مثل الإيجار والفواتير والقروض والمصاريف الأساسية. يمكن للشخص وضع مبلغ الأمن في حساب بنكي سهل السحب أو في أداة استثمارية آمنة وسائلة، مثل الودائع الثابتة أو الصناديق النقدية ‎مبلغ الأمن يساعد الشخص على تجنب الاقتراض أو الاستنفاذ من مدخراته أو استثماراته في حالة الحاجة، ويعطيه الراحة النفسية والثقة في مواجهة التحديات المالية. كما يساهم في تحقيق الأمن المالي للشخص وعائلته على المدى الطويل</p>
+            <p id="per">المحفظة ونقصد بها مبلغ الأمان ‎مبلغ الأمن هو مبلغ من المال يحتفظ به الشخص لمواجهة الحالات الطارئة أو الغير متوقعة، مثل فقدان العمل أو الإصابة بمرض أو تلف ممتلكاته. ينصح خبراء الإدارة المالية بأن يكون مبلغ الأمن ما بين ثلاثة إلى ستة أشهر من النفقات الشهرية الثابتة للشخص، مثل الإيجار والفواتير والقروض والمصاريف الأساسية. يمكن للشخص وضع مبلغ الأمن في حساب بنكي سهل السحب أو في أداة استثمارية آمنة وسائلة، مثل الودائع الثابتة أو الصناديق النقدية ‎مبلغ الأمن يساعد الشخص على تجنب الاقتراض أو الاستنفاذ من مدخراته أو استثماراته في حالة الحاجة، ويعطيه الراحة النفسية والثقة في مواجهة التحديات المالية. كما يساهم في تحقيق الأمن المالي للشخص وعائلته على المدى الطويل</p>
         </div>
     </div>
 
         <p id="sD-p">مبلغ الأمان</p>
         <div class="container">
-            <div class="box" id="b5"> 
-            <span id="number1">9999</span>
+            <div class="box1" id="b5"> 
+            <span id="number1">9000</span>
             </div>
         </div>
         <p id="S-p">الأدخار</p>
     <div id="Ll">
         <div class="container">
             <div class="box" id="b5"> 
-            <span id="number2">9999</span>
+            <span id="number2">1500</span>
             </div>
     </div>
     </div>

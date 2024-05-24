@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,15 +20,22 @@
 
         #Logo{
             position: absolute;
-            left: 10px;
+            right: 10px;
             top: 10px;
             height: 130px;
+        }
+
+        p{
+            font-family: "Comic Neue", cursive;
+            font-weight: 700;
+            font-style: italic;
         }
 
         h1{
             font-family: "Comic Neue", cursive;
             font-weight: 700;
             font-style: italic;
+            background-color: #b6b6b6;
         }
 
 
@@ -82,6 +89,22 @@
                 left: 15%;
                 border: 10px;
                 box-shadow: 0px -10px 0px rgb(255, 38, 0), -0px -2.5px 0px 7px rgb(0, 0, 0);
+            }
+
+            .box1 {
+                width: 165px;
+                height: 165px;
+                border: 1px solid #ccc;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 65px;
+                margin: 10px;
+                position:absolute;
+                top: 45%;
+                left: 15%;
+                border: 10px;
+                box-shadow: 0px -10px 0px rgb(21, 255, 0), -0px -2.5px 0px 7px rgb(0, 0, 0);
             }
 
             .square {
@@ -151,15 +174,91 @@
 
         #per{
             margin-top: 15px;
-            font-size: 25px;
+            font-size: 23px;
             background-color: #b6b6b6;
             
         }
+
+        #page-N{
+            margin: 0;
+            padding: 0;
+            padding-top: 35px;
+            padding-left: 5px;
+            font-size: 35px;
+        }
+
+        @media only screen and (max-width: 1349px) {
+            /* Your CSS styles for screens less than 1349px wide */
+            p {
+                font-size: 10px; /* Example style change */
+            }
+            #table {
+                align-items: center;
+                justify-content: center;
+            }
+            #po {
+                position: absolute;
+                top: 75vh;
+                left: 50%;
+                transform: translate(-50%, 0%);
+            }
+
+            #text-div{
+                width: 300px;
+            }
+
+            .box {
+                width: 125px;
+                height: 125px;
+                border: 1px solid #ccc;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 65px;
+                margin: 10px;
+                position:absolute;
+                top: 45%;
+                left: 17vw;
+                border: 10px;
+                box-shadow: 0px -10px 0px rgb(255, 38, 0), -0px -2.5px 0px 7px rgb(0, 0, 0);
+            }
+
+            .box1 {
+                width: 125px;
+                height: 125px;
+                border: 1px solid #ccc;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 65px;
+                margin: 10px;
+                position:absolute;
+                top: 45%;
+                left: 17vw;
+                border: 10px;
+                box-shadow: 0px -10px 0px rgb(30, 255, 0), -0px -2.5px 0px 7px rgb(0, 0, 0);
+            }
+
+            #sD-p{
+                font-size: 32px;
+                position: absolute;
+                top:280px
+            }
+
+            #S-p{
+                font-size: 37px;
+                position: absolute;
+                top:300px;
+                left: 220px;
+            }
+
+            }
 
     </style>
 </head>
 <body>
     <header>
+        <p id="page-N">Wallet</p>
         <img src="./images/logo.png" alt="Logo" id="Logo">
     </header>
 
@@ -173,14 +272,14 @@
         <p id="sD-p">Security<br>Deposits</p>
         <div class="container">
             <div class="box" id="b5"> 
-            <span id="number1">9999</span>
+            <span id="number1">2000</span>
             </div>
         </div>
         <p id="S-p">Savings</p>
     <div id="Ll">
         <div class="container">
-            <div class="box" id="b5"> 
-            <span id="number2">9999</span>
+            <div class="box1" id="b5"> 
+            <span id="number2">9000</span>
             </div>
     </div>
     </div>
