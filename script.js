@@ -1,20 +1,17 @@
+document.addEventListener('DOMContentLoaded', function() {
+  // Text to be typed out
+  var text = "Hello, world!";
 
-  var sentences = ["اختر اللغة.", "choose the language."];
-  function typewriter() {
-  if (i < sentences.length) {
-    var currentSentence = sentences[i]; // Get the current sentence
+  // Delay between each letter being typed (in milliseconds)
+  var typingSpeed = 100;
 
-    // Loop through characters in the current sentence
-    for (var j = 0; j < currentSentence.length; j++) {
-      document.getElementById("typewriter").innerHTML += currentSentence.charAt(j);
-      setTimeout(function() {}, 10); // Short delay between characters
+  var index = 0;
+  var typingInterval = setInterval(function() {
+    if (index < text.length) {
+      document.getElementById('typing-text').textContent += text.charAt(index);
+      index++;
+    } else {
+      clearInterval(typingInterval);
     }
-
-    // Clear the paragraph after typing the sentence (optional)
-    document.getElementById("typewriter").innerHTML = "";
-
-    i++; // Move to the next sentence in the array
-    setTimeout(typewriter, 1000); // Delay between sentences (1 second here)
-   }
-  }
-
+  }, typingSpeed);
+});
