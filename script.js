@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
         index++;
       } else {
         clearInterval(typingInterval);
-        setTimeout(deleteText, 1000); // Wait for 1 second before deleting
+        setTimeout(deleteText, 1000); //
       }
     }, typingSpeed);
   }
