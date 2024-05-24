@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
         index--;
       } else {
         clearInterval(deleteInterval);
-        currentIndex++ = 0;
+        currentIndex = 0; // Reset currentIndex to 0
         if (currentIndex < sentences.length) {
           currentSentence = sentences[currentIndex];
           setTimeout(typeText, 500); // Wait for 0.5 second before typing next sentence
