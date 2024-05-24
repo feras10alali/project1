@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     }, typingSpeed);
   }
-  
+  //i forgot WTF is going on
   function deleteText() {
     var index = currentSentence.length - 1;
     var deleteInterval = setInterval(function() {
