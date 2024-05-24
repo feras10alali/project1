@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-  var sentences = ["اختر اللغة.", "choose the language."];
+  var sentences = [".اختر اللغة", "choose the language."];
   var currentIndex = 0;
   var currentSentence = sentences[currentIndex];
   var typingSpeed = 100;
