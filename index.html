@@ -118,12 +118,21 @@
     a {
       text-decoration: none;
     }
+
+    #typing-text {
+      font-family: Arial, sans-serif;
+      font-size: 24px;
+    }
+
+    
   </style>
 </head>
 <body>
   <header>
     <img src="./images/logo.png" alt="Logo" id="Logo">
   </header>
+
+  <div id="typing-text"></div>
 
   <p id="typewriter"></p>
   
@@ -137,28 +146,9 @@
     </div>
   </div>
   <footer>
-    <p id="footerP">عمل الطلاب: فراس العلي محمد العبد رب الرضا اسامة المجحد</p>
+    <p id="footerP">عمل الطلاب: فراس العلي, محمد العبد رب الرضا, اسامة المجحد</p>
   </footer>
+  
+  <script src="script.js"></script>
   </body>
-  <script">
-    
-  var sentences = ["اختر اللغة.", "choose the language."];
-  function typewriter() {
-  if (i < sentences.length) {
-    var currentSentence = sentences[i]; // Get the current sentence
-
-    // Loop through characters in the current sentence
-    for (var j = 0; j < currentSentence.length; j++) {
-      document.getElementById("typewriter").innerHTML += currentSentence.charAt(j);
-      setTimeout(function() {}, 10); // Short delay between characters
-    }
-
-    // Clear the paragraph after typing the sentence (optional)
-    document.getElementById("typewriter").innerHTML = "";
-
-    i++; // Move to the next sentence in the array
-    setTimeout(typewriter, 1000); // Delay between sentences (1 second here)
-   }
-  }
-  </script>
   </html>
